@@ -12,10 +12,9 @@
 
 ## Watch the video
 
-[![Watch the MyKhata promo video]([videos/mykhata-promo-horizontal.jpg](https://github.com/user-attachments/assets/72805593-f21e-425c-843c-afc64e704d72
-))](videos/mykhata-promo-horizontal.mp4)
+<video src="https://github.com/user-attachments/assets/72805593-f21e-425c-843c-afc64e704d72" controls width="100%"></video>
 
-Click the picture to watch the video (1:44). A vertical version for phones is in [videos/mykhata-promo-vertical.mp4](videos/mykhata-promo-vertical.mp4).
+Download the full-quality videos: [horizontal (1920×1080)](https://github.com/pcodesdaily/dekhomykhata.com/raw/main/videos/mykhata-promo-horizontal.mp4) · [vertical for phones (1080×1920)](https://github.com/pcodesdaily/dekhomykhata.com/raw/main/videos/mykhata-promo-vertical.mp4)
 
 ---
 
