@@ -16,3 +16,7 @@ backend/data/app.db*
 .env*
 !.env.example
 .claude/
+
+# Launch video working files (frames, snapshots, scripts)
+brag-output/
+brag-output-full/
