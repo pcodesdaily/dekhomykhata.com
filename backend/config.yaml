@@ -1,0 +1,44 @@
+seed: 42
+
+data:
+  synthetic_rows: 100000
+  sampling: sqrt
+  brand_popularity: 0.7
+  real_path: data/raw/devildyno_bank_statements.csv
+  real_labels_path: data/raw/devildyno_labels.csv
+  statements_glob: data/raw/statements/*/*.pdf
+
+split:
+  test_size: 0.2
+  cv_folds: 5
+
+model:
+  char_ngrams: [2, 5]
+  word_ngrams: [1, 2]
+  max_char_features: 30000
+  max_word_features: 10000
+  C: 10.0
+  tol: 0.001
+  max_iter: 200
+
+thresholds: [0.3, 0.5, 0.7, 0.9]
+default_threshold: 0.5
+
+insights:
+  rule: {needs: 0.5, wants: 0.3, savings: 0.2}
+  over_under: {min_history_months: 2, over_ratio: 1.25, under_ratio: 0.75, min_delta: 500}
+  unusual: {min_rows: 6, z: 3.5, min_amount: 1000}
+  recurring: {min_months: 3, max_amount_cv: 0.15, price_change: 0.05, min_change: 10}
+
+output:
+  reports: reports
+  artifacts: artifacts
+
+api:
+  database: data/app.db
+  session_days: 30
+  cookie_name: mykhata_session
+  cookie_secure: false
+  max_upload_mb: 20
+  login_attempts: 5
+  login_window_seconds: 300

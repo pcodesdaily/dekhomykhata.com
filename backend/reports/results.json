@@ -1,0 +1,1529 @@
+{
+  "data": {
+    "raw_rows": 100000,
+    "after_dropping_invalid": 99837,
+    "relabelled_ambiguous": 462,
+    "after_dropping_amount_outliers": 99837,
+    "after_dropping_duplicates": 84610,
+    "train_rows": 67689,
+    "test_rows": 16921
+  },
+  "class_counts": {
+    "FOOD_DINING": 8174,
+    "GROCERIES": 7785,
+    "TRANSFER_OUT": 6906,
+    "SHOPPING": 6064,
+    "TRANSPORT": 5587,
+    "TRANSFER_IN": 5412,
+    "BILLS_UTILITIES": 4675,
+    "FUEL": 4170,
+    "ENTERTAINMENT": 3442,
+    "HEALTH": 3096,
+    "TRAVEL": 2912,
+    "INVESTMENT": 2508,
+    "EMI_LOAN": 2388,
+    "CASH_WITHDRAWAL": 2297,
+    "PERSONAL_CARE": 2184,
+    "RENT": 2168,
+    "EDUCATION": 2149,
+    "INSURANCE": 2118,
+    "SALARY": 2056,
+    "REFUND_CASHBACK": 1797,
+    "CREDIT_CARD_BILL": 1736,
+    "OTHER": 1580,
+    "SELF_TRANSFER": 1381,
+    "INVESTMENT_RETURN": 1233,
+    "BANK_CHARGES": 520,
+    "INTEREST": 272
+  },
+  "cv_folds": [
+    {
+      "fold": 1,
+      "accuracy": 0.766747913435261,
+      "macro_f1": 0.7971628320373013,
+      "weighted_f1": 0.7602494885288261
+    },
+    {
+      "fold": 2,
+      "accuracy": 0.7562236832385314,
+      "macro_f1": 0.7974106730649461,
+      "weighted_f1": 0.7552394265437101
+    },
+    {
+      "fold": 3,
+      "accuracy": 0.7434628453242724,
+      "macro_f1": 0.78112954160369,
+      "weighted_f1": 0.7369479395295253
+    },
+    {
+      "fold": 4,
+      "accuracy": 0.8122922360936692,
+      "macro_f1": 0.8439896109931968,
+      "weighted_f1": 0.809364142564265
+    },
+    {
+      "fold": 5,
+      "accuracy": 0.7314965282907372,
+      "macro_f1": 0.7673188210174915,
+      "weighted_f1": 0.7282314263129689
+    }
+  ],
+  "cv_mean": {
+    "accuracy": 0.7620446412764943,
+    "macro_f1": 0.7974022957433252,
+    "weighted_f1": 0.7580064846958591
+  },
+  "catalog": {
+    "brands": 887,
+    "aliases": 1272
+  },
+  "test_unseen": {
+    "accuracy": 0.7698126588263104,
+    "macro_f1": 0.8119415678927899,
+    "weighted_f1": 0.7682782145229756
+  },
+  "per_class_unseen": {
+    "BANK_CHARGES": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 104.0
+    },
+    "BILLS_UTILITIES": {
+      "precision": 0.7309812568908489,
+      "recall": 0.7090909090909091,
+      "f1-score": 0.7198697068403909,
+      "support": 935.0
+    },
+    "CASH_WITHDRAWAL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 460.0
+    },
+    "CREDIT_CARD_BILL": {
+      "precision": 0.9823943661971831,
+      "recall": 0.8040345821325648,
+      "f1-score": 0.884310618066561,
+      "support": 347.0
+    },
+    "EDUCATION": {
+      "precision": 0.6754176610978521,
+      "recall": 0.6581395348837209,
+      "f1-score": 0.6666666666666666,
+      "support": 430.0
+    },
+    "EMI_LOAN": {
+      "precision": 0.7825278810408922,
+      "recall": 0.8807531380753139,
+      "f1-score": 0.8287401574803149,
+      "support": 478.0
+    },
+    "ENTERTAINMENT": {
+      "precision": 0.6857798165137615,
+      "recall": 0.43459302325581395,
+      "f1-score": 0.5320284697508897,
+      "support": 688.0
+    },
+    "FOOD_DINING": {
+      "precision": 0.6421866372170072,
+      "recall": 0.7113149847094801,
+      "f1-score": 0.6749854904236796,
+      "support": 1635.0
+    },
+    "FUEL": {
+      "precision": 0.8651162790697674,
+      "recall": 0.6690647482014388,
+      "f1-score": 0.7545638945233266,
+      "support": 834.0
+    },
+    "GROCERIES": {
+      "precision": 0.6977928692699491,
+      "recall": 0.791907514450867,
+      "f1-score": 0.7418772563176895,
+      "support": 1557.0
+    },
+    "HEALTH": {
+      "precision": 0.7407407407407407,
+      "recall": 0.7741935483870968,
+      "f1-score": 0.7570977917981072,
+      "support": 620.0
+    },
+    "INSURANCE": {
+      "precision": 0.8830769230769231,
+      "recall": 0.6752941176470588,
+      "f1-score": 0.7653333333333333,
+      "support": 425.0
+    },
+    "INTEREST": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 54.0
+    },
+    "INVESTMENT": {
+      "precision": 0.7972602739726027,
+      "recall": 0.5796812749003984,
+      "f1-score": 0.671280276816609,
+      "support": 502.0
+    },
+    "INVESTMENT_RETURN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 247.0
+    },
+    "OTHER": {
+      "precision": 0.8233695652173914,
+      "recall": 0.9588607594936709,
+      "f1-score": 0.8859649122807017,
+      "support": 316.0
+    },
+    "PERSONAL_CARE": {
+      "precision": 0.8410757946210269,
+      "recall": 0.7871853546910755,
+      "f1-score": 0.8132387706855791,
+      "support": 437.0
+    },
+    "REFUND_CASHBACK": {
+      "precision": 1.0,
+      "recall": 0.9721448467966574,
+      "f1-score": 0.9858757062146892,
+      "support": 359.0
+    },
+    "RENT": {
+      "precision": 0.7597254004576659,
+      "recall": 0.7649769585253456,
+      "f1-score": 0.7623421354764638,
+      "support": 434.0
+    },
+    "SALARY": {
+      "precision": 0.9804878048780488,
+      "recall": 0.9781021897810219,
+      "f1-score": 0.9792935444579781,
+      "support": 411.0
+    },
+    "SELF_TRANSFER": {
+      "precision": 0.981549815498155,
+      "recall": 0.9637681159420289,
+      "f1-score": 0.9725776965265083,
+      "support": 276.0
+    },
+    "SHOPPING": {
+      "precision": 0.46467218332272436,
+      "recall": 0.6018136850783182,
+      "f1-score": 0.5244252873563219,
+      "support": 1213.0
+    },
+    "TRANSFER_IN": {
+      "precision": 0.9880843263061412,
+      "recall": 0.9953831948291783,
+      "f1-score": 0.9917203311867525,
+      "support": 1083.0
+    },
+    "TRANSFER_OUT": {
+      "precision": 0.7768739105171412,
+      "recall": 0.967438494934877,
+      "f1-score": 0.8617466967450854,
+      "support": 1382.0
+    },
+    "TRANSPORT": {
+      "precision": 0.8479166666666667,
+      "recall": 0.7287376902417189,
+      "f1-score": 0.783822821376986,
+      "support": 1117.0
+    },
+    "TRAVEL": {
+      "precision": 0.7685185185185185,
+      "recall": 0.43154246100519933,
+      "f1-score": 0.5527192008879024,
+      "support": 577.0
+    }
+  },
+  "thresholds_unseen": [
+    {
+      "threshold": 0.3,
+      "coverage": 0.904142781159506,
+      "accuracy_answered": 0.8271782469442447
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.7673896341823769,
+      "accuracy_answered": 0.902194840200231
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.6629040836829975,
+      "accuracy_answered": 0.9499866274404921
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.5424029312688375,
+      "accuracy_answered": 0.9836565700588363
+    }
+  ],
+  "calibration_unseen": {
+    "ece": 0.005770887734161383,
+    "bins": [
+      {
+        "bin": "0.1-0.2",
+        "count": 393,
+        "confidence": 0.17391401529312134,
+        "accuracy": 0.20610687022900764
+      },
+      {
+        "bin": "0.2-0.3",
+        "count": 1229,
+        "confidence": 0.2523258924484253,
+        "accuracy": 0.23596419853539463
+      },
+      {
+        "bin": "0.3-0.4",
+        "count": 1261,
+        "confidence": 0.3493553698062897,
+        "accuracy": 0.34892942109436953
+      },
+      {
+        "bin": "0.4-0.5",
+        "count": 1053,
+        "confidence": 0.4489121437072754,
+        "accuracy": 0.4748338081671415
+      },
+      {
+        "bin": "0.5-0.6",
+        "count": 939,
+        "confidence": 0.5477533936500549,
+        "accuracy": 0.549520766773163
+      },
+      {
+        "bin": "0.6-0.7",
+        "count": 829,
+        "confidence": 0.6495320200920105,
+        "accuracy": 0.6550060313630881
+      },
+      {
+        "bin": "0.7-0.8",
+        "count": 883,
+        "confidence": 0.7506957054138184,
+        "accuracy": 0.7474518686296716
+      },
+      {
+        "bin": "0.8-0.9",
+        "count": 1156,
+        "confidence": 0.8520055413246155,
+        "accuracy": 0.8373702422145328
+      },
+      {
+        "bin": "0.9-1.0",
+        "count": 9178,
+        "confidence": 0.9824497699737549,
+        "accuracy": 0.9836565700588363
+      }
+    ]
+  },
+  "counterparty_unseen": {
+    "Brands": {
+      "accuracy": 0.6184450524395805,
+      "rows": 8772
+    },
+    "Employers": {
+      "accuracy": 0.9627329192546584,
+      "rows": 322
+    },
+    "Fixed patterns": {
+      "accuracy": 0.9897750511247444,
+      "rows": 1956
+    },
+    "Local shops": {
+      "accuracy": 0.8767395626242545,
+      "rows": 3018
+    },
+    "People": {
+      "accuracy": 0.9495268138801262,
+      "rows": 2853
+    }
+  },
+  "confusion_unseen": {
+    "labels": [
+      "BANK_CHARGES",
+      "BILLS_UTILITIES",
+      "CASH_WITHDRAWAL",
+      "CREDIT_CARD_BILL",
+      "EDUCATION",
+      "EMI_LOAN",
+      "ENTERTAINMENT",
+      "FOOD_DINING",
+      "FUEL",
+      "GROCERIES",
+      "HEALTH",
+      "INSURANCE",
+      "INTEREST",
+      "INVESTMENT",
+      "INVESTMENT_RETURN",
+      "OTHER",
+      "PERSONAL_CARE",
+      "REFUND_CASHBACK",
+      "RENT",
+      "SALARY",
+      "SELF_TRANSFER",
+      "SHOPPING",
+      "TRANSFER_IN",
+      "TRANSFER_OUT",
+      "TRANSPORT",
+      "TRAVEL"
+    ],
+    "matrix": [
+      [
+        104,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        663,
+        0,
+        0,
+        29,
+        6,
+        26,
+        99,
+        25,
+        20,
+        2,
+        0,
+        0,
+        20,
+        0,
+        2,
+        2,
+        0,
+        2,
+        0,
+        0,
+        15,
+        0,
+        14,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        460,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        279,
+        11,
+        9,
+        0,
+        1,
+        0,
+        5,
+        3,
+        5,
+        0,
+        3,
+        0,
+        0,
+        1,
+        0,
+        6,
+        0,
+        0,
+        8,
+        0,
+        9,
+        0,
+        1
+      ],
+      [
+        0,
+        8,
+        0,
+        0,
+        283,
+        8,
+        5,
+        13,
+        0,
+        10,
+        1,
+        0,
+        0,
+        12,
+        0,
+        2,
+        1,
+        0,
+        9,
+        0,
+        0,
+        62,
+        0,
+        12,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        3,
+        421,
+        0,
+        4,
+        0,
+        0,
+        1,
+        19,
+        0,
+        13,
+        0,
+        2,
+        0,
+        0,
+        4,
+        0,
+        0,
+        5,
+        0,
+        2,
+        1,
+        2
+      ],
+      [
+        0,
+        18,
+        0,
+        0,
+        4,
+        0,
+        299,
+        85,
+        0,
+        25,
+        21,
+        1,
+        0,
+        0,
+        0,
+        6,
+        3,
+        0,
+        0,
+        0,
+        0,
+        182,
+        0,
+        13,
+        17,
+        14
+      ],
+      [
+        0,
+        38,
+        0,
+        3,
+        2,
+        0,
+        10,
+        1163,
+        8,
+        143,
+        9,
+        0,
+        0,
+        6,
+        0,
+        2,
+        9,
+        0,
+        0,
+        1,
+        0,
+        126,
+        0,
+        60,
+        50,
+        5
+      ],
+      [
+        0,
+        47,
+        0,
+        0,
+        0,
+        0,
+        1,
+        73,
+        558,
+        23,
+        10,
+        0,
+        0,
+        1,
+        0,
+        17,
+        2,
+        0,
+        2,
+        0,
+        0,
+        68,
+        0,
+        15,
+        17,
+        0
+      ],
+      [
+        0,
+        5,
+        0,
+        0,
+        3,
+        0,
+        13,
+        98,
+        12,
+        1233,
+        13,
+        1,
+        0,
+        0,
+        0,
+        6,
+        38,
+        0,
+        0,
+        0,
+        0,
+        47,
+        0,
+        53,
+        24,
+        11
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        4,
+        0,
+        1,
+        13,
+        3,
+        20,
+        480,
+        5,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        1,
+        0,
+        0,
+        78,
+        0,
+        7,
+        2,
+        1
+      ],
+      [
+        0,
+        7,
+        0,
+        1,
+        17,
+        21,
+        0,
+        5,
+        2,
+        0,
+        56,
+        287,
+        0,
+        7,
+        0,
+        1,
+        0,
+        0,
+        4,
+        0,
+        0,
+        13,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        54,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        45,
+        0,
+        0,
+        14,
+        59,
+        0,
+        11,
+        0,
+        16,
+        2,
+        0,
+        0,
+        291,
+        0,
+        8,
+        1,
+        0,
+        15,
+        0,
+        0,
+        19,
+        0,
+        14,
+        0,
+        7
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        247,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        303,
+        1,
+        0,
+        1,
+        4,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        18,
+        4,
+        13,
+        11,
+        0,
+        0,
+        0,
+        0,
+        1,
+        344,
+        0,
+        1,
+        0,
+        0,
+        26,
+        0,
+        13,
+        2,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        349,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        332,
+        0,
+        0,
+        8,
+        0,
+        90,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        402,
+        4,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        266,
+        0,
+        3,
+        7,
+        0,
+        0
+      ],
+      [
+        0,
+        37,
+        0,
+        0,
+        43,
+        12,
+        11,
+        85,
+        10,
+        189,
+        35,
+        6,
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        11,
+        1,
+        0,
+        730,
+        0,
+        22,
+        8,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1078,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        3,
+        1,
+        0,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        35,
+        0,
+        0,
+        2,
+        0,
+        1337,
+        0,
+        0
+      ],
+      [
+        0,
+        12,
+        0,
+        0,
+        0,
+        0,
+        39,
+        70,
+        16,
+        54,
+        2,
+        0,
+        0,
+        4,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        39,
+        0,
+        39,
+        814,
+        26
+      ],
+      [
+        0,
+        12,
+        0,
+        0,
+        4,
+        2,
+        30,
+        71,
+        6,
+        9,
+        1,
+        1,
+        0,
+        6,
+        0,
+        4,
+        3,
+        0,
+        14,
+        1,
+        0,
+        142,
+        0,
+        9,
+        13,
+        249
+      ]
+    ]
+  },
+  "test_seen": {
+    "accuracy": 0.9648977662214868,
+    "macro_f1": 0.9702271228545047,
+    "weighted_f1": 0.9649229862169137
+  },
+  "per_class_seen": {
+    "BANK_CHARGES": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 104.0
+    },
+    "BILLS_UTILITIES": {
+      "precision": 0.9914346895074947,
+      "recall": 0.9903743315508021,
+      "f1-score": 0.990904226859283,
+      "support": 935.0
+    },
+    "CASH_WITHDRAWAL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 459.0
+    },
+    "CREDIT_CARD_BILL": {
+      "precision": 0.9942196531791907,
+      "recall": 0.9913544668587896,
+      "f1-score": 0.9927849927849928,
+      "support": 347.0
+    },
+    "EDUCATION": {
+      "precision": 0.9849246231155779,
+      "recall": 0.9116279069767442,
+      "f1-score": 0.9468599033816425,
+      "support": 430.0
+    },
+    "EMI_LOAN": {
+      "precision": 1.0,
+      "recall": 0.9790794979079498,
+      "f1-score": 0.9894291754756871,
+      "support": 478.0
+    },
+    "ENTERTAINMENT": {
+      "precision": 0.9956011730205279,
+      "recall": 0.9869186046511628,
+      "f1-score": 0.9912408759124087,
+      "support": 688.0
+    },
+    "FOOD_DINING": {
+      "precision": 0.9497578692493946,
+      "recall": 0.9596330275229358,
+      "f1-score": 0.9546699117736538,
+      "support": 1635.0
+    },
+    "FUEL": {
+      "precision": 0.9793689320388349,
+      "recall": 0.9676258992805755,
+      "f1-score": 0.9734620024125452,
+      "support": 834.0
+    },
+    "GROCERIES": {
+      "precision": 0.9431459254579911,
+      "recall": 0.9588953114964676,
+      "f1-score": 0.9509554140127389,
+      "support": 1557.0
+    },
+    "HEALTH": {
+      "precision": 0.9667774086378738,
+      "recall": 0.9402261712439418,
+      "f1-score": 0.9533169533169533,
+      "support": 619.0
+    },
+    "INSURANCE": {
+      "precision": 0.9928400954653938,
+      "recall": 0.9811320754716981,
+      "f1-score": 0.9869513641755635,
+      "support": 424.0
+    },
+    "INTEREST": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 54.0
+    },
+    "INVESTMENT": {
+      "precision": 0.993963782696177,
+      "recall": 0.9840637450199203,
+      "f1-score": 0.988988988988989,
+      "support": 502.0
+    },
+    "INVESTMENT_RETURN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 247.0
+    },
+    "OTHER": {
+      "precision": 0.9657320872274143,
+      "recall": 0.9810126582278481,
+      "f1-score": 0.9733124018838305,
+      "support": 316.0
+    },
+    "PERSONAL_CARE": {
+      "precision": 0.975669099756691,
+      "recall": 0.9176201372997712,
+      "f1-score": 0.9457547169811321,
+      "support": 437.0
+    },
+    "REFUND_CASHBACK": {
+      "precision": 1.0,
+      "recall": 0.9610027855153204,
+      "f1-score": 0.9801136363636364,
+      "support": 359.0
+    },
+    "RENT": {
+      "precision": 0.8217821782178217,
+      "recall": 0.7649769585253456,
+      "f1-score": 0.7923627684964201,
+      "support": 434.0
+    },
+    "SALARY": {
+      "precision": 1.0,
+      "recall": 0.9951338199513382,
+      "f1-score": 0.9975609756097561,
+      "support": 411.0
+    },
+    "SELF_TRANSFER": {
+      "precision": 0.9888059701492538,
+      "recall": 0.9601449275362319,
+      "f1-score": 0.9742647058823529,
+      "support": 276.0
+    },
+    "SHOPPING": {
+      "precision": 0.9545085296506904,
+      "recall": 0.9686727122835944,
+      "f1-score": 0.9615384615384616,
+      "support": 1213.0
+    },
+    "TRANSFER_IN": {
+      "precision": 0.98359161349134,
+      "recall": 0.9963065558633426,
+      "f1-score": 0.9899082568807339,
+      "support": 1083.0
+    },
+    "TRANSFER_OUT": {
+      "precision": 0.8815261044176707,
+      "recall": 0.9536567704561911,
+      "f1-score": 0.9161739130434783,
+      "support": 1381.0
+    },
+    "TRANSPORT": {
+      "precision": 0.9890510948905109,
+      "recall": 0.9704565801253358,
+      "f1-score": 0.9796656122910077,
+      "support": 1117.0
+    },
+    "TRAVEL": {
+      "precision": 1.0,
+      "recall": 0.9914089347079038,
+      "f1-score": 0.9956859361518551,
+      "support": 582.0
+    }
+  },
+  "thresholds_seen": [
+    {
+      "threshold": 0.3,
+      "coverage": 0.9896584328093606,
+      "accuracy_answered": 0.9716367110527259
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.9650159555608084,
+      "accuracy_answered": 0.9829148805878751
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.9309183311665288,
+      "accuracy_answered": 0.9916206436869168
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.8597092542252689,
+      "accuracy_answered": 0.9975941710200715
+    }
+  ],
+  "calibration_seen": {
+    "ece": 0.026204140100224427,
+    "bins": [
+      {
+        "bin": "0.1-0.2",
+        "count": 20,
+        "confidence": 0.1796303540468216,
+        "accuracy": 0.3
+      },
+      {
+        "bin": "0.2-0.3",
+        "count": 155,
+        "confidence": 0.2528355121612549,
+        "accuracy": 0.3225806451612903
+      },
+      {
+        "bin": "0.3-0.4",
+        "count": 203,
+        "confidence": 0.35128670930862427,
+        "accuracy": 0.4088669950738916
+      },
+      {
+        "bin": "0.4-0.5",
+        "count": 214,
+        "confidence": 0.4535712003707886,
+        "accuracy": 0.6448598130841121
+      },
+      {
+        "bin": "0.5-0.6",
+        "count": 261,
+        "confidence": 0.5501686930656433,
+        "accuracy": 0.6973180076628352
+      },
+      {
+        "bin": "0.6-0.7",
+        "count": 316,
+        "confidence": 0.6529637575149536,
+        "accuracy": 0.7848101265822784
+      },
+      {
+        "bin": "0.7-0.8",
+        "count": 383,
+        "confidence": 0.7533314228057861,
+        "accuracy": 0.8694516971279374
+      },
+      {
+        "bin": "0.8-0.9",
+        "count": 822,
+        "confidence": 0.8570014834403992,
+        "accuracy": 0.9428223844282239
+      },
+      {
+        "bin": "0.9-1.0",
+        "count": 14548,
+        "confidence": 0.9850497841835022,
+        "accuracy": 0.9975941710200715
+      }
+    ]
+  },
+  "counterparty_seen": {
+    "Brands": {
+      "accuracy": 0.9919764945191547,
+      "rows": 8849
+    },
+    "Employers": {
+      "accuracy": 0.9936305732484076,
+      "rows": 314
+    },
+    "Fixed patterns": {
+      "accuracy": 0.987290289781393,
+      "rows": 1967
+    },
+    "Local shops": {
+      "accuracy": 0.890841500506928,
+      "rows": 2959
+    },
+    "People": {
+      "accuracy": 0.9389339922343806,
+      "rows": 2833
+    }
+  },
+  "benchmark": {
+    "Majority class": {
+      "unseen_train_seconds": 0.3527810999985377,
+      "unseen_accuracy": 0.09662549494710715,
+      "unseen_macro_f1": 0.00677782015354768,
+      "seen_train_seconds": 0.37421680000261404,
+      "seen_accuracy": 0.09661978489540243,
+      "seen_macro_f1": 0.006777454910234993,
+      "real_accuracy": 0.0,
+      "abstains": false
+    },
+    "Brand keyword lookup": {
+      "unseen_train_seconds": 0.017317999998340383,
+      "unseen_accuracy": 0.13450741681933692,
+      "unseen_macro_f1": 0.2671669445145206,
+      "seen_train_seconds": 0.01576800000111689,
+      "seen_accuracy": 0.5597447110270654,
+      "seen_macro_f1": 0.643593598059266,
+      "real_accuracy": 0.9861111111111112,
+      "abstains": false
+    },
+    "Word TF-IDF + logistic regression": {
+      "unseen_train_seconds": 5.322284199999558,
+      "unseen_accuracy": 0.6636723597896106,
+      "unseen_macro_f1": 0.7276090080042613,
+      "seen_train_seconds": 4.482589999999618,
+      "seen_accuracy": 0.9192766812433518,
+      "seen_macro_f1": 0.9300812729212484,
+      "real_accuracy": 0.9900793650793651,
+      "abstains": true
+    },
+    "Char TF-IDF + naive Bayes": {
+      "unseen_train_seconds": 8.949374499999976,
+      "unseen_accuracy": 0.6710596300455056,
+      "unseen_macro_f1": 0.6976384135132663,
+      "seen_train_seconds": 11.885366099999374,
+      "seen_accuracy": 0.9107670488121972,
+      "seen_macro_f1": 0.9160470392445756,
+      "real_accuracy": 0.9325396825396826,
+      "abstains": true
+    },
+    "Char + word TF-IDF + linear SVM": {
+      "unseen_train_seconds": 49.9531218000011,
+      "unseen_accuracy": 0.76337095916317,
+      "unseen_macro_f1": 0.8019306558448908,
+      "seen_train_seconds": 100.84300729999813,
+      "seen_accuracy": 0.9682070677224914,
+      "seen_macro_f1": 0.9726026197339114,
+      "real_accuracy": 0.9900793650793651,
+      "abstains": false
+    }
+  },
+  "export": {
+    "bytes": 1457326,
+    "features": 40000,
+    "microseconds_per_txn": 399.74270000020624,
+    "agreement_with_full_precision": 0.9994
+  },
+  "real": {
+    "rows": 504,
+    "accuracy": 0.9920634920634921,
+    "informative_rows": 27,
+    "informative_accuracy": 1.0,
+    "opaque_kept_as_other": 0.9916142557651991
+  },
+  "samples": [
+    {
+      "narration": "GAS FILLING STATION",
+      "type": "DEBIT",
+      "amount": 100.0,
+      "category": "FUEL",
+      "label": "FUEL",
+      "confidence": 1.0
+    },
+    {
+      "narration": "5188810",
+      "type": "CREDIT",
+      "amount": 15.0,
+      "category": "TRANSFER_IN",
+      "label": "OTHER",
+      "confidence": 0.733
+    },
+    {
+      "narration": "ATM",
+      "type": "DEBIT",
+      "amount": 1000.0,
+      "category": "CASH_WITHDRAWAL",
+      "label": "CASH_WITHDRAWAL",
+      "confidence": 1.0
+    },
+    {
+      "narration": "UPI/32378/goog-payment",
+      "type": "CREDIT",
+      "amount": 21.0,
+      "category": "REFUND_CASHBACK",
+      "label": "REFUND_CASHBACK",
+      "confidence": 0.969
+    },
+    {
+      "narration": "AMZN",
+      "type": "DEBIT",
+      "amount": 10.0,
+      "category": "SHOPPING",
+      "label": "SHOPPING",
+      "confidence": 0.88
+    },
+    {
+      "narration": "UPI/JIOINAPPDIRECT/",
+      "type": "DEBIT",
+      "amount": 15.0,
+      "category": "BILLS_UTILITIES",
+      "label": "BILLS_UTILITIES",
+      "confidence": 0.99
+    },
+    {
+      "narration": "UPI/3234",
+      "type": "DEBIT",
+      "amount": 1.0,
+      "category": "OTHER",
+      "label": "OTHER",
+      "confidence": 0.995
+    },
+    {
+      "narration": "UPI/3234",
+      "type": "CREDIT",
+      "amount": 3000.0,
+      "category": "OTHER",
+      "label": "OTHER",
+      "confidence": 0.994
+    }
+  ],
+  "parser": {
+    "Layout 1": {
+      "found": 1.0,
+      "balance_check_pass": 0.8792487481492635,
+      "truth_rows": 160.84,
+      "parsed_rows": 160.84,
+      "date": 1.0,
+      "amount": 1.0,
+      "type": 1.0,
+      "balance": 1.0,
+      "narration_exact": 0.9494153444821145,
+      "narration_ignoring_spaces": 1.0
+    },
+    "Layout 2": {
+      "found": 1.0,
+      "balance_check_pass": 0.8825458601583703,
+      "truth_rows": 159.8,
+      "parsed_rows": 159.8,
+      "date": 1.0,
+      "amount": 1.0,
+      "type": 1.0,
+      "balance": 1.0,
+      "narration_exact": 0.992489230218034,
+      "narration_ignoring_spaces": 1.0
+    }
+  }
+}

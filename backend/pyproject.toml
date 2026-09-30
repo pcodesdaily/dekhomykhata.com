@@ -1,0 +1,30 @@
+[project]
+name = "mykhata-ml"
+version = "0.1.0"
+description = "MyKhata backend: statement parser, transaction categoriser and API"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "scikit-learn>=1.5",
+    "pandas>=2.2",
+    "pyyaml>=6.0",
+    "pdfplumber>=0.11",
+    "fastapi>=0.140",
+    "uvicorn>=0.30",
+    "sqlalchemy>=2.1",
+    "argon2-cffi>=25",
+    "python-multipart>=0.0.20",
+    "email-validator>=2.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx2>=2.13"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
